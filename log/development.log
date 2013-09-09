@@ -1,0 +1,2850 @@
+
+
+Started GET "/" for 192.168.204.1 at 2013-09-09 05:48:31 -0700
+
+Mysql2::Error (Unknown database 'depot_development'):
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `connect'
+  mysql2 (0.3.13) lib/mysql2/client.rb:58:in `initialize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.0) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2251518745907087004__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+
+
+Started GET "/" for 192.168.204.1 at 2013-09-09 05:48:46 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (0.9ms)
+Completed 200 OK in 29ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (27.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (55.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateProducts (20130909124938)
+  [1m[35m (9.1ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `image_url` varchar(255), `price` decimal(8,2), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130909124938')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/product" for 192.168.204.1 at 2013-09-09 05:54:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActionController::RoutingError (No route matches [GET] "/product"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (37.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (69.1ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 05:54:19 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1158ms (Views: 1129.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 05:54:20 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 05:54:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 05:54:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 05:54:21 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 05:54:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 05:54:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 05:54:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 05:54:21 -0700
+
+
+Started GET "/products/new" for 192.168.204.1 at 2013-09-09 05:54:23 -0700
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (159.7ms)
+  Rendered products/new.html.erb within layouts/application (163.1ms)
+Completed 200 OK in 172ms (Views: 169.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AvjWZAhBSA5vNWcSM2+hsV8dVwPUg38HfHS/r3hM7P4=", "product"=>{"title"=>"Majalah i", "description"=>"majalah informasi, innovasi, ilmiah, intelek dan lain", "image_url"=>"", "price"=>"50"}, "commit"=>"Create Product"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 12:55:08', 'majalah informasi, innovasi, ilmiah, intelek dan lain', '', 50.0, 'Majalah i', '2013-09-09 12:55:08')
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.204.128:3000/products/1
+Completed 302 Found in 56ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/products/1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.7ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:08 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 05:55:10 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/1" for 192.168.204.1 at 2013-09-09 05:55:14 -0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 16ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 05:55:18 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/new" for 192.168.204.1 at 2013-09-09 05:55:19 -0700
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (7.3ms)
+  Rendered products/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AvjWZAhBSA5vNWcSM2+hsV8dVwPUg38HfHS/r3hM7P4=", "product"=>{"title"=>"HTC One X", "description"=>"Brace yourself for lightning-fast web browsing, remarkable picture quality and seamless gaming visuals thanks to the powerful quad-core processor. ", "image_url"=>"", "price"=>"1120"}, "commit"=>"Create Product"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 12:55:45', 'Brace yourself for lightning-fast web browsing, remarkable picture quality and seamless gaming visuals thanks to the powerful quad-core processor. ', '', 1120.0, 'HTC One X', '2013-09-09 12:55:45')[0m
+  [1m[35m (7.0ms)[0m  COMMIT
+Redirected to http://192.168.204.128:3000/products/2
+Completed 302 Found in 17ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/products/2" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 05:55:45 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 05:55:47 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/new" for 192.168.204.1 at 2013-09-09 05:57:09 -0700
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (9.6ms)
+  Rendered products/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 192.168.204.1 at 2013-09-09 06:02:53 -0700
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AvjWZAhBSA5vNWcSM2+hsV8dVwPUg38HfHS/r3hM7P4=", "product"=>{"title"=>"CoffeScript", "description"=>"CoffeeScript is a little language that compiles into JavaScript. Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous heart.", "image_url"=>"cs.jpg", "price"=>"120.00"}, "commit"=>"Create Product"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 13:02:53', 'CoffeeScript is a little language that compiles into JavaScript. Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous heart.', 'cs.jpg', 120.0, 'CoffeScript', '2013-09-09 13:02:53')
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.204.128:3000/products/3
+Completed 302 Found in 21ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/products/3" for 192.168.204.1 at 2013-09-09 06:02:53 -0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.6ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  Rendered products/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:02:54 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:02:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:02:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:02:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:02:54 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:02:54 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:02:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:02:54 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:02:55 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mSQL (56.7ms)[0m  DELETE FROM `products`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 13:03:29', '<p>\n CoffeeScript is JavaScript done right. It provides all of JavaScript\'s\n	functionality wrapped in a cleaner, more succinct syntax. In the first\n	book on this exciting new language, CoffeeScript guru Trevor Burnham\n	shows you how to hold onto all the power and flexibility of JavaScript\n	while writing clearer, cleaner, and safer code.\n </p>', 'cs.jpg', 36.0, 'CoffeeScript', '2013-09-09 13:03:29')
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 13:03:29', '<p>\n Ruby is the fastest growing and most exciting dynamic language\n out there. If you need to get working programs delivered fast,\n you should add Ruby to your toolbox.\n </p>', 'ruby.jpg', 49.95, 'Programming Ruby 1.9', '2013-09-09 13:03:29')[0m
+  [1m[35m (3.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 13:03:29', '<p>\n <em>Rails Test Prescriptions</em> is a comprehensive guide to testing\n Rails applications, covering Test-Driven Development from both a\n theoretical perspective (why to test) and from a practical perspective\n (how to test effectively). It covers the core Rails testing tools and\n procedures for Rails 2 and Rails 3, and introduces popular add-ons,\n including Cucumber, Shoulda, Machinist, Mocha, and Rcov.\n </p>', 'rtp.jpg', 34.95, 'Rails Test Prescriptions', '2013-09-09 13:03:29')
+  [1m[36m (4.2ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:03:36 -0700
+
+
+Started GET "/products/4" for 192.168.204.1 at 2013-09-09 06:03:38 -0700
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:03:40 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 60ms (Views: 57.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 104ms (Views: 101.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:05:33 -0700
+
+
+Started DELETE "/products/6" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AvjWZAhBSA5vNWcSM2+hsV8dVwPUg38HfHS/r3hM7P4=", "id"=>"6"}
+  [1m[35mProduct Load (0.7ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 6 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM `products` WHERE `products`.`id` = 6
+  [1m[36m (50.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.204.128:3000/products
+Completed 302 Found in 62ms (ActiveRecord: 52.3ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:41 -0700
+
+
+Started DELETE "/products/5" for 192.168.204.1 at 2013-09-09 06:07:43 -0700
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AvjWZAhBSA5vNWcSM2+hsV8dVwPUg38HfHS/r3hM7P4=", "id"=>"5"}
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM `products` WHERE `products`.`id` = 5[0m
+  [1m[35m (3.1ms)[0m  COMMIT
+Redirected to http://192.168.204.128:3000/products
+Completed 302 Found in 14ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:07:43 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:43 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:43 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:44 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:44 -0700
+
+
+Started DELETE "/products/4" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AvjWZAhBSA5vNWcSM2+hsV8dVwPUg38HfHS/r3hM7P4=", "id"=>"4"}
+  [1m[35mProduct Load (0.7ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  DELETE FROM `products` WHERE `products`.`id` = 4
+  [1m[36m (81.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.204.128:3000/products
+Completed 302 Found in 96ms (ActiveRecord: 84.5ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM `products`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 13:07:52', '<p>\n CoffeeScript is JavaScript done right. It provides all of JavaScript\'s\n	functionality wrapped in a cleaner, more succinct syntax. In the first\n	book on this exciting new language, CoffeeScript guru Trevor Burnham\n	shows you how to hold onto all the power and flexibility of JavaScript\n	while writing clearer, cleaner, and safer code.\n </p>', 'cs.jpg', 36.0, 'CoffeeScript', '2013-09-09 13:07:52')
+  [1m[36m (57.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 13:07:52', '<p>\n Ruby is the fastest growing and most exciting dynamic language\n out there. If you need to get working programs delivered fast,\n you should add Ruby to your toolbox.\n </p>', 'ruby.jpg', 49.95, 'Programming Ruby 1.9', '2013-09-09 13:07:52')[0m
+  [1m[35m (3.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `products` (`created_at`, `description`, `image_url`, `price`, `title`, `updated_at`) VALUES ('2013-09-09 13:07:52', '<p>\n <em>Rails Test Prescriptions</em> is a comprehensive guide to testing\n Rails applications, covering Test-Driven Development from both a\n theoretical perspective (why to test) and from a practical perspective\n (how to test effectively). It covers the core Rails testing tools and\n procedures for Rails 2 and Rails 3, and introduces popular add-ons,\n including Cucumber, Shoulda, Machinist, Mocha, and Rcov.\n </p>', 'rtp.jpg', 34.95, 'Rails Test Prescriptions', '2013-09-09 13:07:52')
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:07:54 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:09:40 -0700
+Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb__4528891950159205242_69949784453300 RAISED /var/www/depot/app/views/products/index.html.erb:18: syntax error, unexpected tASSOC, expecting ')'
+...line_odd', 'list_line_even') =>">
+...                               ^
+/var/www/depot/app/views/products/index.html.erb:18: unterminated string meets end of file
+Function body:           def _app_views_products_index_html_erb__4528891950159205242_69949784453300(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+';     @products.each do |product| 
+@output_buffer.safe_append='      <tr class="';@output_buffer.append=( cycle('list_line_odd', 'list_line_even') =>">
+        <td><%= product.title );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( product.description );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( product.image_url );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( product.price );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Show', product );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Edit', edit_product_path(product) );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_append='</td>
+      </tr>
+';     end 
+@output_buffer.safe_append='  </tbody>
+</table>
+
+<br>
+
+';@output_buffer.append=( link_to 'New Product', new_product_path );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered products/index.html.erb within layouts/application (61.7ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (/var/www/depot/app/views/products/index.html.erb:18: syntax error, unexpected tASSOC, expecting ')'
+...line_odd', 'list_line_even') =>">
+...                               ^
+/var/www/depot/app/views/products/index.html.erb:18: unterminated string meets end of file):
+    15: 
+    16:   <tbody>
+    17:     <% @products.each do |product| %>
+    18:       <tr class="<%= cycle('list_line_odd', 'list_line_even') =>">
+    19:         <td><%= product.title %></td>
+    20:         <td><%= product.description %></td>
+    21:         <td><%= product.image_url %></td>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.7ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:10:17 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:11:47 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:12:06 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (159.9ms)
+Completed 200 OK in 167ms (Views: 164.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:12:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:07 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:12:07 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:12:07 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:07 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:12:47 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:15:16 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 125ms (Views: 122.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:15:17 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:15:17 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:15:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:15:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:15:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:15:17 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:15:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:15:17 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:19:29 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:19:29 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:19:29 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:19:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:19:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:19:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:19:30 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:19:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:19:30 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:20:01 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:20:02 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:20:02 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:20:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:20:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:20:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:20:02 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:20:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:20:02 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/cs.jpg" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/ruby.jpg" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/assets/rtp.jpg" for 192.168.204.1 at 2013-09-09 06:21:30 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:23:08 -0700
+Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb__4528891950159205242_69949649572940 RAISED /var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length: 80) );@output_buffer.safe_ap...
+...                               ^
+Function body:           def _app_views_products_index_html_erb__4528891950159205242_69949649572940(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+';     @products.each do |product| 
+@output_buffer.safe_append='      <tr class="';@output_buffer.append=( cycle('list_line_odd', 'list_line_even') );@output_buffer.safe_append='">
+		<td>​';@output_buffer.append=( image_tag(product.image_url, class: 'list_image') );@output_buffer.safe_append='​</td>
+		<td>';@output_buffer.append=( product.title );@output_buffer.safe_append='</td>
+        <td class="list_description">
+			<dl>​
+				<dt>';@output_buffer.append=( product.title );@output_buffer.safe_append='</dt>​
+				<dd>';@output_buffer.append=( truncate(strip_tags(product.description),​ length: 80) );@output_buffer.safe_append='</dd>​
+			</dl>
+			';@output_buffer.append=( truncate(strip_tags(product.description), length: 80) );@output_buffer.safe_append='
+		</td>
+        <td>';@output_buffer.append=( product.price );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Show', product );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Edit', edit_product_path(product) );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_append='</td>
+      </tr>
+';     end 
+@output_buffer.safe_append='  </tbody>
+</table>
+
+<br>
+
+';@output_buffer.append=( link_to 'New Product', new_product_path );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered products/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (/var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length: 80) );@output_buffer.safe_ap...
+...                               ^):
+    21:         <td class="list_description">
+    22: 			<dl>​
+    23: 				<dt><%= product.title %></dt>​
+    24: 				<dd><%= truncate(strip_tags(product.description),​ length: 80) %></dd>​
+    25: 			</dl>
+    26: 			<%= truncate(strip_tags(product.description), length: 80) %>
+    27: 		</td>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 06:24:01 -0700
+Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb__4528891950159205242_69949784711300 RAISED /var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length: 80) );@output_buffer.safe_ap...
+...                               ^
+Function body:           def _app_views_products_index_html_erb__4528891950159205242_69949784711300(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+';     @products.each do |product| 
+@output_buffer.safe_append='      <tr class="';@output_buffer.append=( cycle('list_line_odd', 'list_line_even') );@output_buffer.safe_append='">
+		<td>​';@output_buffer.append=( image_tag(product.image_url, class: 'list_image') );@output_buffer.safe_append='​</td>
+		<td>';@output_buffer.append=( product.title );@output_buffer.safe_append='</td>
+        <td class="list_description">
+			<dl>​
+				<dt>';@output_buffer.append=( product.title );@output_buffer.safe_append='</dt>​
+				<dd>';@output_buffer.append=( truncate(strip_tags(product.description),​ length: 80) );@output_buffer.safe_append='</dd>​
+			</dl>
+		</td>
+        <td>';@output_buffer.append=( product.price );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Show', product );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Edit', edit_product_path(product) );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_append='</td>
+      </tr>
+';     end 
+@output_buffer.safe_append='  </tbody>
+</table>
+
+<br>
+
+';@output_buffer.append=( link_to 'New Product', new_product_path );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered products/index.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (/var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length: 80) );@output_buffer.safe_ap...
+...                               ^):
+    21:         <td class="list_description">
+    22: 			<dl>​
+    23: 				<dt><%= product.title %></dt>​
+    24: 				<dd><%= truncate(strip_tags(product.description),​ length: 80) %></dd>​
+    25: 			</dl>
+    26: 		</td>
+    27:         <td><%= product.price %></td>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (44.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (56.9ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:08:22 -0700
+Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb__4528891950159205242_69949784711300 RAISED /var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length: 80) );@output_buffer.safe_ap...
+...                               ^
+Function body:           def _app_views_products_index_html_erb__4528891950159205242_69949784711300(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+';     @products.each do |product| 
+@output_buffer.safe_append='      <tr class="';@output_buffer.append=( cycle('list_line_odd', 'list_line_even') );@output_buffer.safe_append='">
+		<td>​';@output_buffer.append=( image_tag(product.image_url, class: 'list_image') );@output_buffer.safe_append='​</td>
+		<td>';@output_buffer.append=( product.title );@output_buffer.safe_append='</td>
+        <td class="list_description">
+			<dl>​
+				<dt>';@output_buffer.append=( product.title );@output_buffer.safe_append='</dt>​
+				<dd>';@output_buffer.append=( truncate(strip_tags(product.description),​ length: 80) );@output_buffer.safe_append='</dd>​
+			</dl>
+		</td>
+        <td>';@output_buffer.append=( product.price );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Show', product );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Edit', edit_product_path(product) );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_append='</td>
+      </tr>
+';     end 
+@output_buffer.safe_append='  </tbody>
+</table>
+
+<br>
+
+';@output_buffer.append=( link_to 'New Product', new_product_path );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered products/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (/var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length: 80) );@output_buffer.safe_ap...
+...                               ^):
+    21:         <td class="list_description">
+    22: 			<dl>​
+    23: 				<dt><%= product.title %></dt>​
+    24: 				<dd><%= truncate(strip_tags(product.description),​ length: 80) %></dd>​
+    25: 			</dl>
+    26: 		</td>
+    27:         <td><%= product.price %></td>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (39.0ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:09:42 -0700
+Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb__4528891950159205242_69949787196440 RAISED /var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length: 80) );@output_buffer.safe_ap...
+...                               ^
+Function body:           def _app_views_products_index_html_erb__4528891950159205242_69949787196440(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+';     @products.each do |product| 
+@output_buffer.safe_append='      <tr class="';@output_buffer.append=( cycle('list_line_odd', 'list_line_even') );@output_buffer.safe_append='">
+		<td>​';@output_buffer.append=( image_tag(product.image_url, class: 'list_image') );@output_buffer.safe_append='​</td>
+		<td>';@output_buffer.append=( product.title );@output_buffer.safe_append='</td>
+        <td class="list_description">
+			<dl>​
+				<dt>';@output_buffer.append=( product.title );@output_buffer.safe_append='</dt>​
+				<dd>';@output_buffer.append=( truncate(strip_tags(product.description),​ length: 80) );@output_buffer.safe_append='</dd>​
+			</dl>
+		</td>
+        <td>';@output_buffer.append=( product.price );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Show', product );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Edit', edit_product_path(product) );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_append='</td>
+      </tr>
+';     end 
+@output_buffer.safe_append='  </tbody>
+</table>
+
+<br>
+
+';@output_buffer.append=( link_to 'New Product', new_product_path );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__2500656644363157369__process_action__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__1874305461803445023__call__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered products/index.html.erb within layouts/application (5.2ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:12:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb___345248889851818968_27849900 RAISED /var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length:80) );@output_buffer.safe_app...
+...                               ^
+Function body:           def _app_views_products_index_html_erb___345248889851818968_27849900(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+';     @products.each do |product| 
+@output_buffer.safe_append='      <tr class="';@output_buffer.append=( cycle('list_line_odd', 'list_line_even') );@output_buffer.safe_append='">
+		<td>​';@output_buffer.append=( image_tag(product.image_url, class: 'list_image') );@output_buffer.safe_append='​</td>
+		<td>';@output_buffer.append=( product.title );@output_buffer.safe_append='</td>
+        <td class="list_description">
+			<dl>​
+				<dt>';@output_buffer.append=( product.title );@output_buffer.safe_append='</dt>​
+				<dd>';@output_buffer.append=( truncate(strip_tags(product.description),​ length:80) );@output_buffer.safe_append='</dd>​
+			</dl>
+		</td>
+        <td>';@output_buffer.append=( product.price );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Show', product );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Edit', edit_product_path(product) );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_append='</td>
+      </tr>
+';     end 
+@output_buffer.safe_append='  </tbody>
+</table>
+
+<br>
+
+';@output_buffer.append=( link_to 'New Product', new_product_path );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__1144771419096641903__process_action__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__265777949029358305__call__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered products/index.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (/var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length:80) );@output_buffer.safe_app...
+...                               ^):
+    21:         <td class="list_description">
+    22: 			<dl>​
+    23: 				<dt><%= product.title %></dt>​
+    24: 				<dd><%= truncate(strip_tags(product.description),​ length:80) %></dd>​
+    25: 			</dl>
+    26: 		</td>
+    27:         <td><%= product.price %></td>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__1144771419096641903__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__265777949029358305__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:13:58 -0700
+Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb___345248889851818968_70355963128940 RAISED /var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length:80) );@output_buffer.safe_app...
+...                               ^
+Function body:           def _app_views_products_index_html_erb___345248889851818968_70355963128940(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+';     @products.each do |product| 
+@output_buffer.safe_append='      <tr class="';@output_buffer.append=( cycle('list_line_odd', 'list_line_even') );@output_buffer.safe_append='">
+		<td>​';@output_buffer.append=( image_tag(product.image_url, class: 'list_image') );@output_buffer.safe_append='​</td>
+		<td>';@output_buffer.append=( product.title );@output_buffer.safe_append='</td>
+        <td class="list_description">
+			<dl>​
+				<dt>';@output_buffer.append=( product.title );@output_buffer.safe_append='</dt>​
+					<dd>';@output_buffer.append=( truncate(strip_tags(product.description),​ length:80) );@output_buffer.safe_append='</dd>​
+			</dl>
+		</td>
+        <td>';@output_buffer.append=( product.price );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Show', product );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Edit', edit_product_path(product) );@output_buffer.safe_append='</td>
+        <td>';@output_buffer.append=( link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } );@output_buffer.safe_append='</td>
+      </tr>
+';     end 
+@output_buffer.safe_append='  </tbody>
+</table>
+
+<br>
+
+';@output_buffer.append=( link_to 'New Product', new_product_path );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__1144771419096641903__process_action__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/var/lib/gems/1.9.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__265777949029358305__call__callbacks'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered products/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (/var/www/depot/app/views/products/index.html.erb:24: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...roduct.description),​ length:80) );@output_buffer.safe_app...
+...                               ^):
+    21:         <td class="list_description">
+    22: 			<dl>​
+    23: 				<dt><%= product.title %></dt>​
+    24: 					<dd><%= truncate(strip_tags(product.description),​ length:80) %></dd>​
+    25: 			</dl>
+    26: 		</td>
+    27:         <td><%= product.price %></td>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__1144771419096641903__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__265777949029358305__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.6ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (108.8ms)
+Completed 200 OK in 178ms (Views: 173.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/cs.jpg" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/ruby.jpg" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/assets/rtp.jpg" for 192.168.204.1 at 2013-09-09 07:15:26 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/cs.jpg" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/ruby.jpg" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/assets/rtp.jpg" for 192.168.204.1 at 2013-09-09 07:15:58 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/cs.jpg" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/ruby.jpg" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/assets/rtp.jpg" for 192.168.204.1 at 2013-09-09 07:16:31 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/cs.jpg" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/ruby.jpg" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/assets/rtp.jpg" for 192.168.204.1 at 2013-09-09 07:16:47 -0700
+
+
+Started GET "/products/new" for 192.168.204.1 at 2013-09-09 07:16:52 -0700
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (65.7ms)
+  Rendered products/new.html.erb within layouts/application (83.6ms)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:16:53 -0700
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products`
+  Rendered products/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cs.jpg" for 192.168.204.1 at 2013-09-09 07:16:53 -0700
+
+
+Started GET "/assets/ruby.jpg" for 192.168.204.1 at 2013-09-09 07:16:53 -0700
+
+
+Started GET "/assets/rtp.jpg" for 192.168.204.1 at 2013-09-09 07:16:53 -0700
+
+
+Started GET "/products" for 192.168.204.1 at 2013-09-09 07:17:20 -0700
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  Rendered products/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.204.1 at 2013-09-09 07:17:20 -0700
+
+
+Started GET "/assets/products.css?body=1" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/products.js?body=1" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/cs.jpg" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/ruby.jpg" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
+
+
+Started GET "/assets/rtp.jpg" for 192.168.204.1 at 2013-09-09 07:17:21 -0700
